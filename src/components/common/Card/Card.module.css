@@ -1,0 +1,20 @@
+.singleCard,
+.gridCard {
+  background-color: var(--surfaceColor);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.singleCard {
+  margin: 1.5rem auto 2rem;
+  max-width: 42rem;
+  border: 1px solid rgba(67, 56, 202, 0.12);
+}
+
+.gridCard {
+  border: 1px solid rgba(67, 56, 202, 0.08);
+}

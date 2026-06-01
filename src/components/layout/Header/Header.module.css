@@ -1,0 +1,42 @@
+.header {
+  background: linear-gradient(165deg, #9970f9 0%, #ddd0ea 45%, #7b3eb8 100%);
+  box-shadow: var(--shadow-sm);
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+.header > ul {
+  display: flex;
+  gap: 1.5rem;
+}
+.navList {
+  display: flex;
+  gap: 1.5rem;
+  text-decoration: none;
+}
+.navItem {
+  font-weight: 500;
+  color: var(--primaryColor);
+  transition: color 0.3s ease;
+  list-style: none;
+}
+.navItem:hover {
+  color: var(--brandColor);
+  text-decoration: none;
+}
+.navItem a {
+  color: var(--brandColor);
+  text-decoration: none;
+}
+.logoCore {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--brandColor);
+  text-decoration: none;
+}
+.logoCore a {
+  color: var(--brandColor);
+  text-decoration: none;
+}

@@ -1,0 +1,27 @@
+.buttonLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.35rem;
+  text-align: center;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--brandColor);
+  border: 1.5px solid rgba(67, 56, 202, 0.35);
+  background-color: var(--surfaceColor);
+  border-radius: var(--radius-pill);
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.buttonLink:hover,
+.buttonLink:active {
+  background: linear-gradient(135deg, var(--brandColor) 0%, var(--brandColorLight) 100%);
+  color: var(--complementaryColor);
+  border-color: transparent;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(67, 56, 202, 0.3);
+}
