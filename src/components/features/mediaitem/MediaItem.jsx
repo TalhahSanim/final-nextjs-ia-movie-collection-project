@@ -8,9 +8,10 @@ function MediaItem({ id, title, poster_path, overview }) {
     <div>
       <Image
         src={`https://image.tmdb.org/t/p/w500/${poster_path}`}
-        alt={title}
+        alt={`Poster: ${title}`}
         width={250}
         height={300}
+        loading="lazy"
       />
       <h2>{title}</h2>
       <p>{overview}</p>
