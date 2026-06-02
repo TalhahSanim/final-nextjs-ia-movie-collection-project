@@ -15,11 +15,11 @@ function HomePage() {
       </Head>
 
       {/* Full-width banner with background image */}
-      {/* <HeroSection
+      <HeroSection
         title="Movie"
         description="Catch up on trending films and timeless classics — all in one place."
         bgImage="/backgrounds/curtain.webp"
-      /> */}
+      />
 
       {/* Site intro + quick links to category pages */}
       <section className="contentSection pageIntro">

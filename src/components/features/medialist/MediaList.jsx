@@ -9,7 +9,7 @@ function MediaList(props) {
       {movies.map((movie, index) => (
         <MediaItem
           key={index}
-          id={movie.id}
+          movieid={movie.id}
           title={movie.title || movie.name}
           poster_path={movie.poster_path}
           overview={movie.overview}

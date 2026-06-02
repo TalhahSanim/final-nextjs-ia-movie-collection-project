@@ -11,7 +11,7 @@ const nextConfig = (phase) => {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "m.media-amazon.com",
+        hostname: "image.tmdb.org",
       },
       {
         protocol: "https",

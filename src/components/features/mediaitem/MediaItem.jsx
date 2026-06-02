@@ -3,7 +3,8 @@ import Card from "@/components/common/Card";
 import Button from "@/components/common/Button";
 import ButtonLink from "@/components/common/ButtonLink";
 import styles from "./MediaItem.module.css";
-function MediaItem({ id, title, poster_path, overview }) {
+import Link from "next/link";
+function MediaItem({ movieid, title, poster_path, overview }) {
   return (
     <div className={styles.mediaItems}>
       <Image
@@ -16,7 +17,13 @@ function MediaItem({ id, title, poster_path, overview }) {
       />
       <h2 className={styles.mediaTitle}>{title}</h2>
       <p className={styles.mediaOverview}>{overview}</p>
-      <Button className={styles.mediaButton}>Details</Button>
+      <Link
+        href={`/movies/movie/${movieid}`}
+        className={styles.mediaButtonLink}
+        target="_blank"
+      >
+        <Button className={styles.mediaButton}>Details</Button>
+      </Link>
     </div>
   );
 }
