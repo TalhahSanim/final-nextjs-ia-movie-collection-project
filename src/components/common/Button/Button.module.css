@@ -10,10 +10,18 @@
   font-weight: 600;
   cursor: pointer;
   color: var(--complementaryColor);
-  background: linear-gradient(135deg, var(--brandColor) 0%, var(--brandColorLight) 100%);
+  background: linear-gradient(
+    135deg,
+    rgb(190, 47, 190) 0%,
+    rgb(75, 75, 162) 100%
+  );
   border: none;
-  border-radius: var(--radius-pill);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  border-radius: 8px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+  width: auto;
 }
 
 .button:hover,

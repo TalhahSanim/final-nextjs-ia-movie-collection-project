@@ -1,6 +1,7 @@
 import React from "react";
 import MediaList from "@/components/features/medialist/MediaList";
 import Head from "next/head";
+import styles from "./Anime.module.css";
 const Anime = ({ movies }) => {
   return (
     <>
@@ -14,10 +15,10 @@ const Anime = ({ movies }) => {
       {/* <HeroSection
         title="Movie"
         description="View the latest hits via flix107"
-        bgImage="/backgrounds/cover.jpg"
+        bgImage="/backgrounds/cover.jpg"c
       /> */}
-      <section className="contentSection">
-        <h1 className="sectionTitle">Trending Anime</h1>
+      <section className="animeSection">
+        <h1 className={styles.animeTitle}>Trending Anime</h1>
         <MediaList movies={movies} />
       </section>
       <div className="categoryNav">
