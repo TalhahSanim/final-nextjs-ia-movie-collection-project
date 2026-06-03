@@ -6,6 +6,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <p>&copy; {getCurrentYear()} MovieFlix107. All rights reserved.</p>
+      <span className={styles.logoIcons}>🎟️🍿</span>
     </footer>
   );
 }

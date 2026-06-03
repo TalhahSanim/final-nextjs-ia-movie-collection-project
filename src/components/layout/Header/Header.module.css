@@ -1,49 +1,70 @@
 .header {
-  background: linear-gradient(165deg, #9970f9 0%, #ddd0ea 45%, #7b3eb8 100%);
-  box-shadow: var(--shadow-sm);
+  background: var(--bg);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
   height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.5rem;
-}
-.header > ul {
-  display: flex;
-  gap: 1.5rem;
+  padding: 0 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 .navList {
   display: flex;
-  gap: 1.5rem;
-  text-decoration: none;
+  gap: 2rem;
+  list-style: none;
 }
 .navItem {
-  font-weight: 500;
-  color: var(--primaryColor);
   transition: color 0.3s ease;
   list-style: none;
 }
-.navItem:hover {
-  color: var(--brandColor);
+.navItem a {
+  color: #4b47b5;
+  text-transform: lowercase;
   text-decoration: none;
-  border-bottom: 2px solid #b59ac1;
+  font-size: 1.02rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: color 0.2s;
+}
+
+.navItem a:hover {
+  color: var(--purple);
+  border-bottom: 2px solid var(--purple2);
   padding-bottom: 2px;
 }
-.navItem a {
-  color: var(--brandColor);
-  text-decoration: none;
-}
+
 .logoCore {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: rgb(93, 54, 190);
-  vertical-align: middle;
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
-  margin-right: 0.35rem;
-}
-.logoCore a {
-  color: plum;
+  gap: 0.5rem;
   text-decoration: none;
-  vertical-align: middle;
+}
+
+.logoIcons {
+  font-size: 1.5rem;
+  letter-spacing: -4px;
+  margin-right: 4px;
+}
+
+.logoText {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--purple2);
+  letter-spacing: 0.5px;
+}
+
+.logoHighlight {
+  color: var(--purple);
+  font-weight: 800;
+}
+
+.logoNumber {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-left: 1px;
+  vertical-align: super;
 }

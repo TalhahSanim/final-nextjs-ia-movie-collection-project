@@ -1,15 +1,14 @@
 .footer {
-  background: linear-gradient(165deg, #9970f9 0%, #ddd0ea 45%, #7b3eb8 100%);
-
+  background: var(--bg);
+  border-top: 1px solid var(--border);
   color: #ffffff;
   text-align: center;
   padding: 1.25rem 1rem;
   margin-top: auto;
-  font-size: 0.95rem;
+  font-size: 1.95rem;
   letter-spacing: 0.02em;
+  color: var(--muted);
 }
-
-.footer p {
-  margin: 0;
-  opacity: 0.9;
+.logoIcons {
+  font-size: 3rem;
 }

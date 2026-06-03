@@ -14,8 +14,11 @@ function MediaList(props) {
           poster_path={movie.poster_path}
           overview={movie.overview}
           media_type={movie.media_type}
-          release_date={movie.release_date}
+          release_date={
+            movie.release_date?.slice(0, 4) || movie.first_air_date.slice(0, 4)
+          }
           type={type}
+          backdrop_path={movie.backdrop_path}
         />
       ))}
     </div>

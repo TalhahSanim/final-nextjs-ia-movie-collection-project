@@ -1,66 +1,78 @@
 .mediaItems {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 8px;
-  object-fit: fill;
-  border: 3px solid #1a0a4a;
-  width: 350px;
-  height: auto;
-  flex-wrap: wrap;
-  background: linear-gradient(
-    135deg,
-    lch(94.35% 10.04 302.82) 0%,
-    #7254af 100%
-  );
+  flex-direction: column;
+  width: 220px;
+  border-radius: 12px;
   overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
   cursor: pointer;
+  background-color: rgb(191, 163, 219);
 }
+
 .mediaItems:hover {
-  transform: translateY(-5);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
 }
+
 .mediaPoster {
-  border-radius: 8px;
   object-fit: cover;
   width: 100%;
-  height: 380px;
-  display: flex;
-  margin: auto;
+  height: 320px;
 }
+
 .mediaTitle {
-  font-size: 1.2em;
-  margin-right: 30px;
-  color: #352185;
-  max-width: 400px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
   text-align: center;
+  padding: 10px 10px 4px;
 }
+
 .mediaOverview {
-  font-size: 0.9em;
-  font-weight: 500;
-  color: #352185;
-  display: block;
-  padding: 0 8px;
-  text-align: center;
+  display: none;
 }
+
+.mediaType {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-align: center;
+  padding: 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mediaRelease {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-align: center;
+  padding: 0 10px 8px;
+}
+
+.mediaButtonLink {
+  display: block;
+  padding: 8px 12px 12px;
+}
+
 .mediaButton {
-  margin-left: auto;
-  padding: 8px 16px;
-  color: #6b3b8a;
-  border: none;
-  border-radius: 4px;
-  margin-top: 10px;
   width: 100%;
   justify-content: center;
+  padding: 8px 16px;
+  background: var(--purple2);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
   display: inline-flex;
+  font-weight: 500;
+  transition: background 0.2s ease;
 }
+
 .mediaButton:hover {
-  background-color: #4338ca;
+  background: var(--purple);
 }

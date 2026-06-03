@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
-import Image from "next/image";
 
 function Header() {
   return (
@@ -8,13 +7,11 @@ function Header() {
       <div className={styles.brand}>
         <Link href="/">
           <span className={styles.logoCore}>
-            <Image
-              src="/images/favicon.ico.svg"
-              alt="s"
-              width={32}
-              height={32}
-            ></Image>
-            <span>MovieFlix107</span>
+            <span className={styles.logoIcons}>🎟️🍿</span>
+            <span className={styles.logoText}>
+              <span className={styles.logoHighlight}>Movie</span>Flix
+              <span className={styles.logoNumber}>107</span>
+            </span>
           </span>
         </Link>
       </div>

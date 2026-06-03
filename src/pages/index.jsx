@@ -2,8 +2,8 @@ import { Fragment } from "react";
 import Head from "next/head";
 import HeroSection from "@/components/layout/HeroSection/HeroSection";
 import ButtonLink from "@/components/common/ButtonLink";
-
-function HomePage() {
+import MediaList from "@/components/features/medialist/MediaList";
+function HomePage({ popularMedia }) {
   return (
     <Fragment>
       <Head>
@@ -41,9 +41,33 @@ function HomePage() {
       {/* Responsive grid of movie cards from db.js */}
       <section className="contentSection">
         <h3 className="sectionTitle">Featured Collection</h3>
-        {/* <MediaList movies={movies} /> */}
+        {popularMedia.length > 0 && <MediaList movies={popularMedia} />}
       </section>
     </Fragment>
   );
 }
+
+export async function getStaticProps() {
+  const response = await fetch(
+    `https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.TMDB_API_KEY}`,
+  );
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(
+      `Failed to fetch posts - Error ${response.status}: ${data.message}`,
+    );
+  }
+
+  const movie = data.results.filter((movie) => movie.poster_path !== null);
+
+  return {
+    props: {
+      popularMedia: movie,
+    },
+    revalidate: 60,
+  };
+}
+
 export default HomePage;

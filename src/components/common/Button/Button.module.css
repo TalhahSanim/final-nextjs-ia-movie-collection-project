@@ -9,11 +9,11 @@
   font-size: 0.875rem;
   font-weight: 600;
   cursor: pointer;
-  color: var(--complementaryColor);
+  color: #fff;
   background: linear-gradient(
     135deg,
-    rgb(190, 47, 190) 0%,
-    rgb(75, 75, 162) 100%
+    #7c4db8 0%,
+    #4e2a85 100%
   );
   border: none;
   border-radius: 8px;

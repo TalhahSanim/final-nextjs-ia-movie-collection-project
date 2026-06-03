@@ -1,50 +1,54 @@
 .showcase {
-  background: no-repeat center/cover;
-  height: min(35vh, 320px);
-  color: purple;
-  width: 95vw;
-  margin-left: calc(-45vw + 43%);
-  margin-bottom: 0.5rem;
-  border-radius: 55px;
+  background-color: var(--purple2);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 320px;
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 24px;
+  overflow: hidden;
 }
 
 .overlay {
   background: linear-gradient(
     135deg,
-    rgba(17, 24, 39, 0.82) 10%,
-    rgba(67, 56, 202, 0.45) 55%,
-    rgba(141, 91, 160, 0.35) 100%
+    rgba(124, 90, 171, 0.85) 0%,
+    rgba(167, 139, 202, 0.6) 55%,
+    rgba(196, 174, 232, 0.4) 100%
   );
   height: 100%;
   width: 100%;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem 1.5rem;
-  border-radius: 55px;
+  padding: 3rem 2rem;
+  border-radius: 24px;
 }
 
 .overlay h1 {
-  margin: 0 0 0.5rem;
-  font-size: clamp(2rem, 5vw, 4rem);
-  font-weight: 400;
-  color: rgb(174, 168, 210);
-  letter-spacing: 0.3em;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 2px 12px rgba(80, 40, 120, 0.4);
 }
 
 .overlay h1 span {
-  font-weight: 700;
-  color: var(--highlightColor);
+  font-weight: 800;
+  color: var(--purple3);
 }
 
 .overlay p {
   margin: 0;
   max-width: 36rem;
   font-size: clamp(0.9rem, 2vw, 1.05rem);
-  line-height: 1.55;
-  color: rgba(148, 141, 184, 0.8);
-  font-weight: 500;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
 }
