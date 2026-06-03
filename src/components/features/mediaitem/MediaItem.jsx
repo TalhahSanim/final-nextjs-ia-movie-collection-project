@@ -20,7 +20,9 @@ function MediaItem({
         ? `/animes/anime/${movieid}`
         : type === "cartoon"
           ? `/cartoons/cartoon/${movieid}`
-          : `/movies/movie/${movieid}`;
+          : type === "hybrid" && media_type === "tv"
+            ? `/tvshows/tvshow/${movieid}`
+            : `/movies/movie/${movieid}`;
 
   return (
     <div className={styles.mediaItems}>

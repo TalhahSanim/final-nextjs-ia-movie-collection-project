@@ -41,7 +41,9 @@ function HomePage({ popularMedia }) {
       {/* Responsive grid of movie cards from db.js */}
       <section className="contentSection">
         <h3 className="sectionTitle">Featured Collection</h3>
-        {popularMedia.length > 0 && <MediaList movies={popularMedia} />}
+        {popularMedia.length > 0 && (
+          <MediaList movies={popularMedia} type="hybrid" />
+        )}
       </section>
     </Fragment>
   );
