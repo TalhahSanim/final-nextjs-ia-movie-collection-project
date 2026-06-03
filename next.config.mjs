@@ -27,7 +27,7 @@ const nextConfig = (phase) => {
   const env = {
     // Used by TMDB category pages; set TMDB_API_KEY in Vercel env vars
     TMDB_API_KEY: process.env.TMDB_API_KEY,
-    // Optional override for absolute URL fetches (not required for local db pages)
+    NEXT_PUBLIC_GA_ID: process.env.NEXT_PUBLIC_GA_ID,
     SERVER_NAME: (() => {
       if (isDev) return "http://localhost:3000/";
       if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}/`;
