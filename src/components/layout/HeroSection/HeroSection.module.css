@@ -3,7 +3,7 @@
   height: min(35vh, 320px);
   color: purple;
   width: 95vw;
-  margin-left: calc(-50vw + 50%);
+  margin-left: calc(-45vw + 43%);
   margin-bottom: 0.5rem;
   border-radius: 55px;
 }
@@ -16,7 +16,7 @@
     rgba(141, 91, 160, 0.35) 100%
   );
   height: 100%;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

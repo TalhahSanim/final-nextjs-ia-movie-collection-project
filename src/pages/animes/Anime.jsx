@@ -1,6 +1,8 @@
 import React from "react";
 import MediaList from "@/components/features/medialist/MediaList";
 import Head from "next/head";
+import HeroSection from "@/components/layout/HeroSection/HeroSection";
+
 import styles from "./Anime.module.css";
 const Anime = ({ movies, type }) => {
   return (
@@ -12,11 +14,11 @@ const Anime = ({ movies, type }) => {
           description="Our selection includes all the latest trending movies and tvshows"
         />
       </Head>
-      {/* <HeroSection
+      <HeroSection
         title="Movie"
         description="View the latest hits via flix107"
-        bgImage="/backgrounds/cover.jpg"c
-      /> */}
+        bgImage="/backgrounds/animehero.jpg"
+      />
       <section className="animeSection">
         <h1 className={styles.animeTitle}>Trending Anime</h1>
         <MediaList movies={movies} type="anime" />

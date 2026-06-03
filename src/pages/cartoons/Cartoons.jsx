@@ -1,6 +1,8 @@
 import React from "react";
 import MediaList from "@/components/features/medialist/MediaList";
 import Head from "next/head";
+import HeroSection from "@/components/layout/HeroSection";
+
 const Cartoons = ({ movies, type }) => {
   return (
     <>
@@ -11,11 +13,11 @@ const Cartoons = ({ movies, type }) => {
           description="Our selection includes all the latest trending movies and tvshows"
         />
       </Head>
-      {/* <HeroSection
+      <HeroSection
         title="Movie"
         description="View the latest hits via flix107"
-        bgImage="/backgrounds/cover.jpg"
-      /> */}
+        bgImage="/backgrounds/cartoonhero.jpg"
+      />
       <section className="contentSection">
         <h1 className="sectionTitle">Trending Cartoons</h1>
         <MediaList movies={movies} type="cartoon" />
