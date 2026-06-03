@@ -32,7 +32,7 @@ function HomePage({ popularMedia }) {
         <nav className="categoryNav">
           <ButtonLink path="/movies/Movies">Movies</ButtonLink>
           <ButtonLink path="/tvshows/TVShows">TV Shows</ButtonLink>
-          <ButtonLink path="/anime/Anime">Anime</ButtonLink>
+          <ButtonLink path="/animes/Anime">Anime</ButtonLink>
           <ButtonLink path="/cartoons/Cartoons">Cartoons</ButtonLink>
         </nav>
         <h1>Work in Progress 🔨🧱🚜</h1>
