@@ -23,8 +23,8 @@
   cursor: pointer;
 }
 .mediaItems:hover {
-  transform: translateY(-4);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7);
+  transform: translateY(-5);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
 .mediaPoster {
   border-radius: 8px;
@@ -45,16 +45,22 @@
   font-size: 0.9em;
   font-weight: 500;
   color: #352185;
-  max-width: 400ch;
   display: block;
+  padding: 0 8px;
   text-align: center;
 }
 .mediaButton {
   margin-left: auto;
   padding: 8px 16px;
-  color: white;
+  color: #6b3b8a;
   border: none;
   border-radius: 4px;
+  margin-top: 10px;
+  width: 100%;
+  justify-content: center;
   cursor: pointer;
   display: inline-flex;
+}
+.mediaButton:hover {
+  background-color: #4338ca;
 }

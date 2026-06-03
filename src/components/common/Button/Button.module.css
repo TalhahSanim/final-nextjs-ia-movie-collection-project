@@ -32,4 +32,5 @@
 
 .button:active {
   transform: translateY(0);
+  opacity: 0.85;
 }
