@@ -2,8 +2,7 @@ import HeroSection from "@/components/layout/HeroSection";
 import Head from "next/head";
 import ButtonLink from "@/components/common/ButtonLink";
 import MediaList from "@/components/features/medialist/MediaList";
-import Fragment from "react";
-function Movies({ movies }) {
+function Movies({ movies, type }) {
   return (
     <>
       <Head>
@@ -20,7 +19,7 @@ function Movies({ movies }) {
       /> */}
       <section className="contentSection">
         <h1 className="sectionTitle">Trending Movies</h1>
-        <MediaList movies={movies} />
+        <MediaList movies={movies} type="movie" />
       </section>
       <div className="categoryNav">
         {/* <ButtonLink path="/news/page2/aus2">Next Page</ButtonLink> */}
@@ -38,7 +37,7 @@ export const getStaticProps = async () => {
   }
   try {
     const response = await fetch(
-      `https://api.themoviedb.org/3/trending/movie/week?api_key=${process.env.TMDB_API_KEY}`,
+      `https://api.themoviedb.org/3/trending/movie/day?api_key=${process.env.TMDB_API_KEY}`,
     );
 
     const data = await response.json();

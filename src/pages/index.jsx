@@ -30,17 +30,18 @@ function HomePage() {
           find your next watch in seconds.
         </p>
         <nav className="categoryNav">
-          <ButtonLink path="">Movies</ButtonLink>
-          <ButtonLink path="">TV Shows</ButtonLink>
-          <ButtonLink path="">Anime</ButtonLink>
-          <ButtonLink path="">Cartoons</ButtonLink>
+          <ButtonLink path="/movies/Movies">Movies</ButtonLink>
+          <ButtonLink path="/tvshows/TVShows">TV Shows</ButtonLink>
+          <ButtonLink path="/anime/Anime">Anime</ButtonLink>
+          <ButtonLink path="/cartoons/Cartoons">Cartoons</ButtonLink>
         </nav>
+        <h1>Work in Progress 🔨🧱🚜</h1>
       </section>
 
       {/* Responsive grid of movie cards from db.js */}
       <section className="contentSection">
         <h3 className="sectionTitle">Featured Collection</h3>
-        {/* <ArticlesList Search={Search} /> */}
+        {/* <MediaList movies={movies} /> */}
       </section>
     </Fragment>
   );

@@ -8,14 +8,13 @@ function Header() {
       <div className={styles.brand}>
         <Link href="/">
           <span className={styles.logoCore}>
-            {/* <Image
-              src="/public/images/favicon.ico.svg"
+            <Image
+              src="/images/favicon.ico.svg"
               alt="s"
               width={32}
               height={32}
-            /> */}
-            Movie Flix 107
-            <span className={styles.logoEmoji}>🍿</span>
+            ></Image>
+            <span>MovieFlix107</span>
           </span>
         </Link>
       </div>
@@ -31,7 +30,7 @@ function Header() {
             <Link href="/tvshows/TVShows">TV Shows</Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/anime/Anime">Anime</Link>
+            <Link href="/animes/Anime">Anime</Link>
           </li>
           <li className={styles.navItem}>
             <Link href="/cartoons/Cartoons">Cartoons</Link>

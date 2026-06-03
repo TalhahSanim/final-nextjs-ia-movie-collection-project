@@ -2,7 +2,7 @@ import React from "react";
 import MediaList from "@/components/features/medialist/MediaList";
 import Head from "next/head";
 import styles from "./Anime.module.css";
-const Anime = ({ movies }) => {
+const Anime = ({ movies, type }) => {
   return (
     <>
       <Head>
@@ -19,7 +19,7 @@ const Anime = ({ movies }) => {
       /> */}
       <section className="animeSection">
         <h1 className={styles.animeTitle}>Trending Anime</h1>
-        <MediaList movies={movies} />
+        <MediaList movies={movies} type="anime" />
       </section>
       <div className="categoryNav">
         {/* <ButtonLink path="/news/page2/aus2">Next Page</ButtonLink> */}
@@ -36,7 +36,7 @@ export const getServerSideProps = async () => {
   }
   try {
     const response = await fetch(
-      `https://api.themoviedb.org/3/discover/tv?with_genres=16&with_origin_country=JP&sort_by=popularity.desc&api_key=${process.env.TMDB_API_KEY}`,
+      `https://api.themoviedb.org/3/discover/tv?with_genres=16&with_origin_country=JP&api_key=${process.env.TMDB_API_KEY}`,
     );
     const data = await response.json();
 

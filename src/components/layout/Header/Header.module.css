@@ -33,10 +33,27 @@
 .logoCore {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--brandColor);
-  text-decoration: none;
+  color: rgb(93, 54, 190);
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-right: 0.35rem;
 }
 .logoCore a {
-  color: var(--brandColor);
+  color: plum;
   text-decoration: none;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 0 2rem 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .main {
+    margin-top: 6.5rem;
+  }
 }

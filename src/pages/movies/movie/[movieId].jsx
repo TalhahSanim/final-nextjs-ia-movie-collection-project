@@ -8,15 +8,17 @@ function MovieDetails({ movie }) {
       <Head>
         <title>{movie.title || movie.name} | MovieFlix107</title>
       </Head>
-      <Image
-        className={styles.moviePage}
-        src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-        alt={`Poster: ${movie.title || movie.name}`}
-        width={300}
-        height={450}
-      />
-      <h2>{movie.title || movie.name}</h2>
-      <p>{movie.overview}</p>
+      <div className={styles.movieContainer}>
+        <Image
+          className={styles.moviePoster}
+          src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+          alt={`Poster: ${movie.title || movie.name}`}
+          width={300}
+          height={450}
+        />
+        <h2>{movie.title || movie.name}</h2>
+        <p className={styles.overview}>{movie.overview}</p>
+      </div>
     </>
   );
 }

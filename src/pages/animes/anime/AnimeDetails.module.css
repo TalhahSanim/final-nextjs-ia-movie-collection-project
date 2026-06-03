@@ -1,0 +1,18 @@
+.movieContainer {
+  background-color: rgb(157, 125, 200);
+  border-radius: 5px;
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 8px 8px 4x 4px rgb(255, 255, 255);
+  align-content: center;
+}
+
+.moviePoster {
+  border-radius: 5px;
+  border: 2px purple;
+}
+.moviePage {
+  max-width: 100%;
+  font-size: large;
+}

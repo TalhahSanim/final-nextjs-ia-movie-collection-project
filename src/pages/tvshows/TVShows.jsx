@@ -3,7 +3,9 @@ import Head from "next/head";
 import ButtonLink from "@/components/common/ButtonLink";
 import MediaList from "@/components/features/medialist/MediaList";
 import { Fragment } from "react";
-function TVShows({ movies }) {
+import Image from "next/image";
+
+function TVShows({ movies, type }) {
   return (
     <>
       <Head>
@@ -13,14 +15,14 @@ function TVShows({ movies }) {
           description="Our selection includes all the latest trending movies and tvshows"
         />
       </Head>
-      {/* <HeroSection
+      <HeroSection
         title="Movie"
         description="View the latest hits via flix107"
         bgImage="/backgrounds/cover.jpg"
-      /> */}
+      />
       <section className="contentSection">
         <h1 className="sectionTitle">Trending TV Shows</h1>
-        <MediaList movies={movies} />
+        <MediaList movies={movies} type="tv" />
       </section>
       <div className="categoryNav">
         {/* <ButtonLink path="/news/page2/aus2">Next Page</ButtonLink> */}
@@ -30,15 +32,15 @@ function TVShows({ movies }) {
 }
 
 export const getServerSideProps = async () => {
-  const apiKey = process.env.TMDB_API_KEY;
+  // const apiKey = process.env.TMDB_API_KEY;
 
-  if (!apiKey) {
-    console.error("TMDB_API_KEY is not set.. Cannot get media data");
-    return { props: { movies: [] }, revalidate: 60 };
-  }
+  // if (!apiKey) {
+  //   console.error("TMDB_API_KEY is not set.. Cannot get media data");
+  //   return { props: { movies: [] }, revalidate: 60 };
+  // }
   try {
     const response = await fetch(
-      `https://api.themoviedb.org/3/trending/tv/week?api_key=${process.env.TMDB_API_KEY}`,
+      `https://api.themoviedb.org/3/trending/tv/day?api_key=${process.env.TMDB_API_KEY}`,
     );
     const data = await response.json();
 

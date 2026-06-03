@@ -1,7 +1,7 @@
 import React from "react";
 import MediaList from "@/components/features/medialist/MediaList";
 import Head from "next/head";
-const Cartoons = ({ movies }) => {
+const Cartoons = ({ movies, type }) => {
   return (
     <>
       <Head>
@@ -18,11 +18,8 @@ const Cartoons = ({ movies }) => {
       /> */}
       <section className="contentSection">
         <h1 className="sectionTitle">Trending Cartoons</h1>
-        <MediaList movies={movies} />
+        <MediaList movies={movies} type="cartoon" />
       </section>
-      <div className="categoryNav">
-        {/* <ButtonLink path="/news/page2/aus2">Next Page</ButtonLink> */}
-      </div>
     </>
   );
 };
