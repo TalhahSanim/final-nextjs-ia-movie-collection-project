@@ -12,8 +12,7 @@
     transform 0.2s ease,
     box-shadow 0.2s ease;
   cursor: pointer;
-  background-color: rgb(167, 130, 203);
-  color: #18205f;
+  color: var(--text);
 }
 
 .mediaItems:hover {
@@ -54,7 +53,7 @@
   font-size: 0.85rem;
   color: #fff;
   text-align: center;
-  background-color: #8751b3;
+  background-color: var(--purple2);
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -82,8 +81,8 @@
   align-items: center;
   justify-content: center;
   padding: 8px 16px;
-  background: #18205f;
-  color: #ffffff;
+  background: var(--purple2);
+  color: #fff;
   border-radius: 8px;
   font-size: 0.875rem;
   font-weight: 600;
@@ -92,14 +91,14 @@
 }
 
 .imdbLink:hover {
-  background: #25318f;
+  background: var(--purple);
 }
 
 .mediaButton {
   width: 100%;
   justify-content: center;
   padding: 8px 16px;
-  background: #25318f;
+  background: var(--purple2);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -107,10 +106,9 @@
   display: flex;
   font-weight: 500;
   transition: background 0.2s ease;
-  display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .mediaButton:hover {
-  background: #18205f;
+  background: var(--purple);
 }

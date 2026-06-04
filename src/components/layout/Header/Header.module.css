@@ -60,14 +60,14 @@
 }
 
 .logoHighlight {
-  color: var(--purple);
+  color: var(--purple2);
   font-weight: 800;
 }
 
 .logoNumber {
   font-size: 0.85rem;
-  font-weight: 400;
-  color: var(--text-muted);
+  font-weight: 600;
+  color: var(--text);
   margin-left: 1px;
   vertical-align: super;
 }
