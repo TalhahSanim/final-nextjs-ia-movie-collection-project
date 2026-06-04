@@ -35,7 +35,7 @@ function MediaItem({
         fetchPriority="high"
       />
       <h2 className={styles.mediaTitle}>{title}</h2>
-      <p className={styles.mediaOverview}>{overview}</p>
+      <h3 className={styles.mediaOverview}>{overview}</h3>
       <p className={styles.mediaType}>{media_type}</p>
       <p className={styles.mediaRelease}>
         Year: {release_date || first_air_date}

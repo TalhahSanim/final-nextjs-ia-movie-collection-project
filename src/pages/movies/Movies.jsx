@@ -18,7 +18,7 @@ function Movies({ movies, type }) {
         bgImage="/backgrounds/cover.jpg"
       />
       <section className="contentSection">
-        <h1 className="sectionTitle">Trending Movies</h1>
+        <h1 className={styles.sectionTitle}>Trending Movies</h1>
         <MediaList movies={movies} type="movie" />
       </section>
       <div className="categoryNav">
