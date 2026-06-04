@@ -30,12 +30,6 @@ const Anime = ({ movies, type }) => {
   );
 };
 export const getServerSideProps = async () => {
-  const apiKey = process.env.TMDB_API_KEY;
-
-  if (!apiKey) {
-    console.error("TMDB_API_KEY is not set.. Cannot get media data");
-    return { props: { movies: [] }, revalidate: 60 };
-  }
   try {
     const response = await fetch(
       `https://api.themoviedb.org/3/discover/tv?with_genres=16&with_origin_country=JP&api_key=${process.env.TMDB_API_KEY}`,

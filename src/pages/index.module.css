@@ -30,23 +30,25 @@
   justify-content: flex-end;
   border-radius: 24px;
 
-  padding-bottom: 3rem; .heroTitle {
+  padding-bottom: 3rem;
+  .heroTitle {
     font-size: 2rem;
   }
   .heroSubtitle {
     font-size: 1rem;
     padding: 0 1rem;
-}
+  }
 
-.heroNav {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+  .heroNav {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-@media (max-width: 600px) {
-  .heroWrapper {
-    height: 380px;
+  @media (max-width: 600px) {
+    .heroWrapper {
+      height: 380px;
+    }
   }
 }
