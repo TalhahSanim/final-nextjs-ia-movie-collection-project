@@ -18,7 +18,7 @@ function TVShows({ movies, type }) {
       <HeroSection
         title="Movie"
         description="View the latest hits via flix107"
-        bgImage="/backgrounds/tvshowheroimg.jpg"
+        bgImage="/backgrounds/tvshowheroimg.webp"
       />
       <section className="contentSection">
         <h1 className="sectionTitle">Trending TV Shows</h1>

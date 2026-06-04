@@ -12,11 +12,9 @@ const NotFoundPage = () => {
           <Image src={notFound} alt="not found 404" height={80} width={90} />
         </span>
         <p className={styles.message}>Page Not Found</p>
-        <p className={styles.sub}>
-          The page you are looking for doesn't exist or has been moved.
-        </p>
+        <p className={styles.sub}>The page you are looking is inaccesible</p>
         <Link href="/" className={styles.homeLink}>
-          🏠 Back to Home
+          🏠 Return to Home
         </Link>
       </div>
     </div>

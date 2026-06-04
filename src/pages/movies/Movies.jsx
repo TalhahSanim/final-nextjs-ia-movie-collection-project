@@ -1,6 +1,5 @@
 import HeroSection from "@/components/layout/HeroSection";
 import Head from "next/head";
-import ButtonLink from "@/components/common/ButtonLink";
 import MediaList from "@/components/features/medialist/MediaList";
 function Movies({ movies, type }) {
   return (
@@ -15,7 +14,7 @@ function Movies({ movies, type }) {
       <HeroSection
         title="Movie"
         description="View the latest hits via flix107"
-        bgImage="/backgrounds/cover.jpg"
+        bgImage="/backgrounds/cover.webp"
       />
       <section className="contentSection">
         <h1 className="sectionTitle">Trending Movies</h1>

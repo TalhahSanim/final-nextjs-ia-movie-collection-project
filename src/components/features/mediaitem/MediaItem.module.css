@@ -19,11 +19,11 @@
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
 }
-
+/* 344x516 */
 .mediaPoster {
   object-fit: cover;
   width: 100%;
-  height: 320px;
+  height: 270px;
 }
 
 .mediaTitle {

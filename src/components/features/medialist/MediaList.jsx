@@ -17,7 +17,7 @@ function MediaList(props) {
           release_date={
             movie.release_date?.slice(0, 4) || movie.first_air_date.slice(0, 4)
           }
-          type={type}
+          type={type} //? Do not change the name it will distort details pages
           backdrop_path={movie.backdrop_path}
         />
       ))}

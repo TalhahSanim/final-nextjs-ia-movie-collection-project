@@ -21,6 +21,7 @@ function AnimeDetails({ movie }) {
             alt={`Poster: ${movie.title || movie.name}`}
             width={280}
             height={420}
+            loading="lazy"
           />
           <div className={styles.info}>
             <h2>{movie.title || movie.name}</h2>

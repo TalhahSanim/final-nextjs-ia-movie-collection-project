@@ -32,7 +32,6 @@ function MediaItem({
         alt={`Poster: ${title}`}
         width={250}
         height={300}
-        loading="eager"
       />
       <h2 className={styles.mediaTitle}>{title}</h2>
       <p className={styles.mediaOverview}>{overview}</p>
