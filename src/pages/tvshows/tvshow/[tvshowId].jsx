@@ -17,7 +17,7 @@ function TVShowDetails({ movie }) {
         <div className={styles.content}>
           <Image
             className={styles.moviePage}
-            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+            src={`https://image.tmdb.org/t/p/w342${movie.poster_path}`}
             alt={`Poster: ${movie.title || movie.name}`}
             width={280}
             height={420}

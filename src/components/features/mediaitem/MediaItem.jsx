@@ -32,6 +32,7 @@ function MediaItem({
         alt={`Poster: ${title}`}
         width={250}
         height={300}
+        fetchPriority="high"
       />
       <h2 className={styles.mediaTitle}>{title}</h2>
       <p className={styles.mediaOverview}>{overview}</p>
