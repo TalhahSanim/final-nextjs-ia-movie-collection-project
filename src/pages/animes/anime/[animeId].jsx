@@ -25,7 +25,7 @@ function AnimeDetails({ movie }) {
           />
           <div className={styles.info}>
             <h2>{movie.title || movie.name}</h2>
-            <p>{movie.first_air_date}</p>
+            <p>{movie.first_air_date?.slice(0, 4)}</p>
 
             <p>{movie.overview}</p>
           </div>

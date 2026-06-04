@@ -1,7 +1,5 @@
 .header {
   background: var(--bg);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
   height: var(--header-height);
   display: flex;
   align-items: center;

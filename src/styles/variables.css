@@ -1,16 +1,37 @@
 :root {
-  --bg: #391d9d;
+  /* Backgrounds */
+  --bg: #c8bfea;
   --bg2: #c1b9e2;
   --surface: #e8e0f5;
+
+  /* Purples */
   --purple: #a78bca;
   --purple2: #7c5aab;
   --purple3: #c4aee8;
-  --text: #1d1862;
-  --text-muted: #4338ca;
-  --muted: #4338ca;
   --tint: #c9b9dd;
-  --border: rgba(167, 139, 202, 0.3);
 
+  /* Text */
+  --text: #2d1f4a;
+  --text-muted: #6b5a8a;
+  --muted: #9b8ab2;
+
+  /* Accents */
+  --gold: #c9a84c;
+  --red: #c0392b;
+
+  /* Borders & Shadows */
+  --border: rgba(167, 139, 202, 0.3);
+  --shadow-sm: 0 2px 8px rgba(124, 90, 171, 0.1);
+  --shadow-md: 0 8px 24px rgba(124, 90, 171, 0.15);
+  --shadow-lg: 0 16px 40px rgba(124, 90, 171, 0.2);
+
+  /* Layout */
   --header-height: 4.5rem;
   --content-max-width: 72rem;
+
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
 }

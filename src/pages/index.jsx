@@ -35,7 +35,6 @@ function HomePage({ popularMedia }) {
           <ButtonLink path="/animes/Anime">Anime</ButtonLink>
           <ButtonLink path="/cartoons/Cartoons">Cartoons</ButtonLink>
         </nav>
-        <h1>Work in Progress 🔨🧱🚜</h1>
       </section>
 
       {/* Responsive grid of movie cards from db.js */}
@@ -51,7 +50,7 @@ function HomePage({ popularMedia }) {
 
 export async function getStaticProps() {
   const response = await fetch(
-    `https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.TMDB_API_KEY}`,
+    `https://api.themoviedb.org/3/trending/all/day?api_key=${process.env.TMDB_API_KEY}`,
   );
 
   const data = await response.json();

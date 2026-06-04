@@ -37,16 +37,19 @@ function MediaItem({
       <h2 className={styles.mediaTitle}>{title}</h2>
       <h3 className={styles.mediaOverview}>{overview}</h3>
       <p className={styles.mediaType}>{media_type}</p>
-      <p className={styles.mediaRelease}>
-        Year: {release_date || first_air_date}
-      </p>
-      <Link href={path} className={styles.mediaButtonLink}>
-        <Button className={styles.mediaButton}>Details</Button>
-      </Link>
-
-      <Link href="https://www.imdb.com/" className={styles.mediaButtonLink}>
-        <Button className={styles.mediaButton}>IMdb</Button>
-      </Link>
+      <p className={styles.mediaRelease}>{release_date || first_air_date}</p>
+      <div className={styles.buttonGroup}>
+        <Link href={path} className={styles.mediaButtonLink}>
+          <Button className={styles.mediaButton}>Details</Button>
+        </Link>
+        <a
+          href="https://www.imdb.com/"
+          target="_blank"
+          className={styles.imdbLink}
+        >
+          IMDb
+        </a>
+      </div>
     </div>
   );
 }

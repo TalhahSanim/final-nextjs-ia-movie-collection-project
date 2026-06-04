@@ -3,10 +3,9 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: 80vh;
-  width: 60vw;
+  width: 100%;
   position: relative;
-  border-radius: 39px;
-  margin-left: 15%;
+  border-radius: 24px;
 }
 
 .backdrop::before {

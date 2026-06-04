@@ -24,7 +24,7 @@ function TVShowDetails({ movie }) {
           />
           <div className={styles.info}>
             <h2>{movie.title || movie.name}</h2>
-            <h3>{movie.first_air_date}</h3>
+            <h3>{movie.first_air_date?.slice(0, 4)}</h3>
             <p>{movie.overview}</p>
           </div>
         </div>
