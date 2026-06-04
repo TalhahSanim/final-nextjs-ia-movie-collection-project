@@ -1,6 +1,7 @@
 import HeroSection from "@/components/layout/HeroSection";
 import Head from "next/head";
 import MediaList from "@/components/features/medialist/MediaList";
+import styles from "./Movies.module.css";
 function Movies({ movies, type }) {
   return (
     <>
@@ -14,7 +15,7 @@ function Movies({ movies, type }) {
       <HeroSection
         title="Movie"
         description="View the latest hits via flix107"
-        bgImage="/backgrounds/cover.webp"
+        bgImage="/backgrounds/cover.jpg"
       />
       <section className="contentSection">
         <h1 className="sectionTitle">Trending Movies</h1>

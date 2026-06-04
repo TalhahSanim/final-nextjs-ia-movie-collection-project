@@ -21,7 +21,7 @@
   list-style: none;
 }
 .navItem a {
-  color: #4b47b5;
+  color: var(--text);
   text-transform: lowercase;
   text-decoration: none;
   font-size: 1.02rem;
@@ -64,7 +64,7 @@
 .logoNumber {
   font-size: 0.85rem;
   font-weight: 400;
-  color: var(--muted);
+  color: var(--text-muted);
   margin-left: 1px;
   vertical-align: super;
 }

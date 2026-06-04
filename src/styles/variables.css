@@ -1,17 +1,16 @@
 :root {
-  --bg: #c8bfea;
+  --bg: #391d9d;
   --bg2: #c1b9e2;
   --surface: #e8e0f5;
   --purple: #a78bca;
   --purple2: #7c5aab;
   --purple3: #c4aee8;
-  --text: #2d1f4a;
-  --text-muted: #6b5a8a;
-  --muted: #9b8ab2;
+  --text: #3730a3;
+  --text-muted: #4338ca;
+  --muted: #4338ca;
+  --tint: #c9b9dd;
   --border: rgba(167, 139, 202, 0.3);
-  --gold: #c9a84c;
-  --gold2: #e8c97a;
-  --red: #c0392b;
+
   --header-height: 4.5rem;
   --content-max-width: 72rem;
 }

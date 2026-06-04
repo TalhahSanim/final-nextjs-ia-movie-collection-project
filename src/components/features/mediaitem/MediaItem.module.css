@@ -12,7 +12,7 @@
     transform 0.2s ease,
     box-shadow 0.2s ease;
   cursor: pointer;
-  background-color: rgb(191, 163, 219);
+  background-color: rgb(167, 130, 203);
 }
 
 .mediaItems:hover {
@@ -27,7 +27,7 @@
 }
 
 .mediaTitle {
-  font-size: 0.95rem;
+  font-size: 1.45rem;
   font-weight: 600;
   color: var(--text);
   text-align: center;
@@ -39,8 +39,10 @@
 }
 
 .mediaType {
-  font-size: 0.75rem;
-  color: var(--muted);
+  font-size: 1.25rem;
+  font-weight: 500;
+
+  color: var(--text);
   text-align: center;
   padding: 0 10px;
   text-transform: uppercase;
@@ -48,8 +50,8 @@
 }
 
 .mediaRelease {
-  font-size: 0.75rem;
-  color: var(--muted);
+  font-size: 1.25rem;
+  color: var(--text);
   text-align: center;
   padding: 0 10px 8px;
 }
@@ -63,7 +65,7 @@
   width: 100%;
   justify-content: center;
   padding: 8px 16px;
-  background: var(--purple2);
+  background: #25318f;
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -74,5 +76,5 @@
 }
 
 .mediaButton:hover {
-  background: var(--purple);
+  background: #18205f;
 }

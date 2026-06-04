@@ -13,7 +13,7 @@
   max-width: var(--content-max-width);
   flex: 1;
   padding: 0 1.25rem 2.5rem;
-  color: #4b47b5;
+  color: var(--text);
 }
 
 @media (min-width: 768px) {
