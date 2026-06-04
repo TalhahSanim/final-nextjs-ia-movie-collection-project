@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 220px;
+  width: 300px;
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--border);
@@ -23,7 +23,7 @@
 .mediaPoster {
   object-fit: cover;
   width: 100%;
-  height: 270px;
+  height: 400px;
 }
 
 .mediaTitle {

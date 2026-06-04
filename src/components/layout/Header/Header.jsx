@@ -39,6 +39,9 @@ function Header() {
             <Link href="/cartoons/Cartoons">Cartoons</Link>
           </li>
           <li className={styles.navItem}>
+            <Link href="/WatchList">Collection</Link>
+          </li>
+          <li className={styles.navItem}>
             <Link href="/about">About</Link>
           </li>
           <li className={styles.navItem}>

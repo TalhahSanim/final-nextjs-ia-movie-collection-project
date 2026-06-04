@@ -9,7 +9,9 @@ function CartoonDetails({ movie }) {
         <title>{movie.title || movie.name} | MovieFlix107</title>
       </Head>
       <div
-        style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w1280${movie.backdrop_path})` }}
+        style={{
+          backgroundImage: `url(https://image.tmdb.org/t/p/w1280${movie.backdrop_path})`,
+        }}
         className={styles.backdrop}
       >
         <div className={styles.content}>
@@ -22,6 +24,8 @@ function CartoonDetails({ movie }) {
           />
           <div className={styles.info}>
             <h2>{movie.title || movie.name}</h2>
+            <p>{movie.first_air_date?.slice(0, 4)}</p>
+
             <p>{movie.overview}</p>
           </div>
         </div>

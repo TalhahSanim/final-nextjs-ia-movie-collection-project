@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Card from "@/components/common/Card";
 import Button from "@/components/common/Button";
-import ButtonLink from "@/components/common/ButtonLink";
 import styles from "./MediaItem.module.css";
 import Link from "next/link";
+
+import { useWatchList } from "@/hooks/usewatchList";
 function MediaItem({
   movieid,
   title,
@@ -24,6 +25,23 @@ function MediaItem({
             ? `/tvshows/tvshow/${movieid}`
             : `/movies/movie/${movieid}`;
 
+  const { addMedia, removeMedia, isSaved } = useWatchList();
+  const saved = isSaved(title);
+
+  function handleWatchList() {
+    if (saved) {
+      removeMedia(title);
+    } else {
+      addMedia({
+        title: title,
+        poster_path: poster_path,
+        overview: overview,
+        media_type: media_type,
+        release_date: release_date,
+      });
+    }
+  }
+
   return (
     <div className={styles.mediaItems}>
       <Image
@@ -35,7 +53,7 @@ function MediaItem({
         fetchPriority="high"
       />
       <h2 className={styles.mediaTitle}>{title}</h2>
-      <h3 className={styles.mediaOverview}>{overview}</h3>
+      <p className={styles.mediaOverview}>{overview}</p>
       <p className={styles.mediaType}>{media_type}</p>
       <p className={styles.mediaRelease}>{release_date || first_air_date}</p>
       <div className={styles.buttonGroup}>
@@ -49,6 +67,9 @@ function MediaItem({
         >
           IMDb
         </a>
+        <Button className={styles.mediaButton} onClick={handleWatchList}>
+          {saved ? "removed from Watchlist " : "Save to Watchlist"}
+        </Button>
       </div>
     </div>
   );
