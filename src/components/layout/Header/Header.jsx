@@ -1,13 +1,19 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
-
+import Image from "next/image";
 function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.brand}>
         <Link href="/">
           <span className={styles.logoCore}>
-            <span className={styles.logoIcons}>🎟️🍿</span>
+            <Image
+              src="/images/favicon.ico.svg"
+              alt="MovieFlix107"
+              width={60}
+              height={280}
+              priority
+            />
             <span className={styles.logoText}>
               <span className={styles.logoHighlight}>Movie</span>Flix
               <span className={styles.logoNumber}>107</span>

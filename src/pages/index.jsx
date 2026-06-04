@@ -2,7 +2,10 @@ import { Fragment } from "react";
 import Head from "next/head";
 import HeroSection from "@/components/layout/HeroSection/HeroSection";
 import ButtonLink from "@/components/common/ButtonLink";
+import Image from "next/image";
 import MediaList from "@/components/features/medialist/MediaList";
+import styles from "./index.module.css";
+
 function HomePage({ popularMedia }) {
   return (
     <Fragment>
@@ -14,21 +17,18 @@ function HomePage({ popularMedia }) {
         />
       </Head>
 
-      {/* Full-width banner with background image */}
-      <HeroSection
-        title="Movie"
-        description="Catch up on trending films and timeless classics — all in one place."
-        bgImage="/backgrounds/curtain.webp"
-      />
+      <div className={styles.heroWrapper}>
+        <Image
+          src="/backgrounds/movieflix107-hero.webp"
+          alt="MovieFlix 107 hero banner"
+          fill
+          priority
+          className={styles.heroImage}
+        />
+        <div className={styles.heroOverlay} />
+      </div>
 
-      {/* Site intro + quick links to category pages */}
       <section className="contentSection pageIntro">
-        <h2 className="pageHeading">MovieFlix 107</h2>
-        <p className="pageLead">
-          Discover trending movies, timeless classics, and hidden gems in one
-          place. Browse curated collections by genre, year, and popularity to
-          find your next watch in seconds.
-        </p>
         <nav className="categoryNav">
           <ButtonLink path="/movies/Movies">Movies</ButtonLink>
           <ButtonLink path="/tvshows/TVShows">TV Shows</ButtonLink>
