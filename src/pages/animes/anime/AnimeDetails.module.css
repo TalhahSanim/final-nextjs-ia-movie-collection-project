@@ -4,7 +4,9 @@
   background-repeat: no-repeat;
   min-height: 100vh;
   position: relative;
-  width: 50%;
+  width: 75%;
+  display: flex;
+  justify-content: center;
 }
 
 .backdrop::before {

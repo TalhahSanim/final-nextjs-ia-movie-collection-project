@@ -37,9 +37,13 @@ function MediaItem({
       <h2 className={styles.mediaTitle}>{title}</h2>
       <p className={styles.mediaOverview}>{overview}</p>
       <p className={styles.mediaType}>{media_type}</p>
-      <p className={styles.mediaRelease}>{release_date}</p>
+      <p className={styles.mediaRelease}>{release_date || first_air_date}</p>
       <Link href={path} className={styles.mediaButtonLink}>
         <Button className={styles.mediaButton}>Details</Button>
+      </Link>
+
+      <Link href="https://www.imdb.com/" className={styles.mediaButtonLink}>
+        <Button className={styles.mediaButton}>IMdb</Button>
       </Link>
     </div>
   );

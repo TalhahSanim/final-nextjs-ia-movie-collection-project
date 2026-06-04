@@ -12,11 +12,11 @@ function Movies({ movies, type }) {
           description="Our selection includes all the latest trending movies and tvshows"
         />
       </Head>
-      {/* <HeroSection
+      <HeroSection
         title="Movie"
         description="View the latest hits via flix107"
         bgImage="/backgrounds/cover.jpg"
-      /> */}
+      />
       <section className="contentSection">
         <h1 className="sectionTitle">Trending Movies</h1>
         <MediaList movies={movies} type="movie" />

@@ -2,15 +2,23 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 80vh;
+  width: 60vw;
   position: relative;
+  border-radius: 39px;
+  margin-left: 15%;
 }
 
 .backdrop::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(124, 90, 171, 0.75) 0%, rgba(200, 191, 234, 0.6) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(124, 90, 171, 0.75) 0%,
+    rgba(144, 113, 255, 0.6) 100%
+  );
+  border-radius: 39px;
 }
 
 .content {
@@ -27,7 +35,7 @@
 
 .moviePage {
   border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   flex-shrink: 0;
 }
 
@@ -42,12 +50,12 @@
   font-size: 2.2rem;
   font-weight: 700;
   color: #fff;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .info p {
   font-size: 1rem;
   line-height: 1.7;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   max-width: 600px;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./MovieDetails.module.css";
 function MovieDetails({ movie }) {
   return (
@@ -9,7 +10,9 @@ function MovieDetails({ movie }) {
         <title>{movie.title || movie.name} | MovieFlix107</title>
       </Head>
       <div
-        style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w1280${movie.backdrop_path})` }}
+        style={{
+          backgroundImage: `url(https://image.tmdb.org/t/p/w1280${movie.backdrop_path})`,
+        }}
         className={styles.backdrop}
       >
         <div className={styles.content}>
@@ -22,6 +25,8 @@ function MovieDetails({ movie }) {
           />
           <div className={styles.info}>
             <h2>{movie.title || movie.name}</h2>
+            <h3>{movie.type}</h3>
+            <p>{movie.release_date?.slice(0, 4)}</p>
             <p>{movie.overview}</p>
           </div>
         </div>
