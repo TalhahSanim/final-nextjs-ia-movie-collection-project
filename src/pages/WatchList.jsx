@@ -8,6 +8,7 @@ function WatchList() {
   return (
     <div>
       <h1>Watch Collection</h1>
+      <h2>Work in Progress </h2>
       {watchlist.length === 0 ? (
         <p>No Media saved. Review Selection</p>
       ) : (
